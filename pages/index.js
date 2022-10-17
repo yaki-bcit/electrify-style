@@ -19,7 +19,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
+        <Logo/>
+        <hr/>
+        <Colors/>
+        <hr/>
+        <Typography/>
+        <hr/>
+        <Grid/>
+        <hr/>
+        <Graphics/>
+
       </main>
 
       <footer className={styles.footer}>

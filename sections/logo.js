@@ -4,5 +4,7 @@ import styles from '../styles/Home.module.css'
 
 // Jane
 export default function Logo() {
-
+return (
+    <h1>hi</h1>
+)
 }

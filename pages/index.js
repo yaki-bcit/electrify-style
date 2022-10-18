@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import Logo from '../sections/logo'
+import Logo from '../sections/logos'
 import Grid from '../sections/grid'
 import Typography from '../sections/typography'
 import Graphics from '../sections/graphics'
 import Colors from '../sections/colors'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Yevgeniy
 export default function Home() {
@@ -20,13 +21,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <Logo/>
-        <hr/>
+                 <hr  className="w-100 p-3 " style={{color:"black" }} />
         <Colors/>
-        <hr/>
+                 <hr className="w-100 p-3 " style={{color:"black" }} />
         <Typography/>
-        <hr/>
+                 <hr className="w-100 p-3 " style={{color:"black" }} />
         <Grid/>
-        <hr/>
+                 <hr className="w-100 p-3 " style={{color:"black" }} />
         <Graphics/>
 
       </main>

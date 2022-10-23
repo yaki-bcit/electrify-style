@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { NavBar } from '../sections/navBar'
 
 import Logo from '../sections/logos'
 import Grid from '../sections/grid'
@@ -9,8 +10,8 @@ import Graphics from '../sections/graphics'
 import Colors from '../sections/colors'
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// Yevgeniy
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -19,16 +20,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavBar />
+
       <main className={styles.main}>
-        <Logo/>
-                 <hr  className="w-100 p-3 " style={{color:"black" }} />
-        <Colors/>
-                 <hr className="w-100 p-3 " style={{color:"black" }} />
-        <Typography/>
-                 <hr className="w-100 p-3 " style={{color:"black" }} />
-        <Grid/>
-                 <hr className="w-100 p-3 " style={{color:"black" }} />
-        <Graphics/>
+        <Logo />
+          <hr  className="w-100 p-3 " style={{color:"black" }} id="colors" />
+        <Colors />
+          <hr className="w-100 p-3 " style={{color:"black" }} id="typography" />
+        <Typography />
+          <hr className="w-100 p-3 " style={{color:"black" }} id="grid" />
+        <Grid />
+          <hr className="w-100 p-3 " style={{color:"black" }} />
+        <Graphics />
 
       </main>
 

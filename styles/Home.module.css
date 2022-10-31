@@ -112,6 +112,9 @@
   scroll-margin-top: 100px;
 }
 
+
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

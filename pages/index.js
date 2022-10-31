@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Style Guide | Electrify</title>
         <meta name="description" content="Style guide for the Electrify web application" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <NavBar />

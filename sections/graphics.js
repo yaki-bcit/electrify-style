@@ -1,6 +1,7 @@
-import Container from "react-bootstrap/Container";
-import styles from "../styles/Home.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image  from 'next/image'
+import Container from "react-bootstrap/Container"
+import styles from "../styles/Home.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faRoad,
   faBatteryThreeQuarters,
@@ -8,7 +9,7 @@ import {
   faCheckCircle,
   faCircleExclamation,
   faCircleXmark,
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"
 
 // Yevgeniy
 export default function Graphics() {
@@ -218,34 +219,89 @@ export default function Graphics() {
 
       <p style={{ fontSize: 20 }}>
         The pictures and illustrations will be used to illustrate the text. They
-        will be used to show the user what the text is talking about. The
-        pictures and illustrations will be used in the following sizes: 100%,
-        50%, 25%, and 10%.
+        will be used to show the user what the content is about. Pages and container 
+        components will have background images where appropriate.
       </p>
 
+      <div style={{ fontSize: 20 }}>
+        Image requirements:
+        <ul style={{ fontSize: 20 }}>
+          <li>
+            The images must be in .png (preferred) or .jpg format.
+          </li>
+
+          <li>
+            Icons and vector illustrations should be in .svg format.
+          </li>
+
+          <li>
+            No borders or shadows.
+          </li>
+
+          <li>
+            Images must be responsive.
+          </li>
+
+          <li>
+            Informative illustrations must have alt text.
+          </li>
+
+          <li>
+            Keep at least 20px of space between the text and the image, except captions.
+          </li>
+
+          <li>
+            The graphic images must be in the same color scheme as the rest of the
+            website.
+          </li>
+
+          <li>
+            The acceptable aspect ratios of the images are 16:9, 4:3, 1:1, 3:4,
+            and 9:16. However, other aspect ratios are allowed for backgrounds.
+          </li>
+        </ul>
+      </div>
+
       <div className={styles.grid}>
-        <div className={styles.card}>
-          <h4>100%</h4>
+        <div style={{ margin: "20px" }} >
+          <Image src='/16to9.jpg' width={384} height={216} margin="20px" alt='16 by 9' />
+          <p>
+            16:9
+          </p>
         </div>
 
-        <div className={styles.card}>
-          <h4>50%</h4>
-        </div>
-
-        <div className={styles.card}>
-          <h4>25%</h4>
-        </div>
-
-        <div className={styles.card}>
-          <h4>10%</h4>
+        <div style={{ margin: "20px" }} >
+          <Image src='/4to3.png' width={288} height={216} margin="20px" alt='16 by 9' />
+          <p>
+            4:3
+          </p>
         </div>
       </div>
 
-      <div className={styles.grid}></div>
+      <div className={styles.grid}>
+        <div style={{ margin: "20px" }} >
+          <Image src='/1to1.png' width={288} height={288} margin="20px" alt='1 by 1' />
+          <p>
+            1:1
+          </p>
+        </div>
+      </div>
 
-      <div className={styles.grid}></div>
+      <div className={styles.grid}>
+        <div style={{ margin: "20px" }} >
+          <Image src='/3to4.png' width={288} height={384} margin="20px" alt='1 by 1' />
+          <p>
+            3:4 
+          </p>
+        </div>
 
-      <div className={styles.grid}></div>
+        <div style={{ margin: "20px" }} >
+          <Image src='/9to16.png'  width={216} height={384} margin="20px" alt='1 by 1' />
+          <p>
+            9:16
+          </p>
+        </div>
+      </div>
     </Container>
-  );
+  )
 }

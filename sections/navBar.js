@@ -5,10 +5,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 export function NavBar() {
   const links = [
-    { name: 'Logos', href: '#logos' },
+    { name: 'Logo', href: '#logo' },
     { name: 'Colors', href: '#colors' },
     { name: 'Typography', href: '#typography' },
-    { name: 'Grid', href: '#grid' },
+    { name: 'Layout', href: '#layout' },
     { name: 'Graphics', href: '#graphics' },
   ]
 

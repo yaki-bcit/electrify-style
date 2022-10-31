@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Container from "react-bootstrap/Container"
 import styles from '../styles/Home.module.css'
 
 // Kevin
 export default function Typography() {
   return (
-    <div className='container-md'>
+    <Container fluid="md">
+      <h2 className={styles.pagesection} id="typography">
+        Typography
+      </h2>
       <h1 className="typography-headings">
         Primary Font: Quicksand
       </h1>
@@ -45,18 +49,34 @@ export default function Typography() {
         Headings
       </h1>
       
-      <p className='typography-XL'>Headings XL</p> 
-        <p>Font Size: 72, 4.5 rem</p>
+      <p className='typography-xl text-center' style={{ fontSize: "4.5rem", marginBottom: 0 }}>
+        Headings XL
+      </p> 
+      <p className='text-center'>
+        Font Size: 72, 4.5 rem
+      </p>
       
-      <p className="typography-L">Headings L</p>
-        <p>Font Size: 64, 4 rem</p>
+      <p className="typography-L text-center" style={{ fontSize: "4rem", marginBottom: 0 }}>
+        Headings L
+      </p>
+      <p className='text-center'>
+        Font Size: 64, 4 rem
+      </p>
       
-      <p className="typography-M">Headings M</p>
-        <p>Font Size: 52, 3.5 rem</p>
+      <p className="typography-M text-center" style={{ fontSize: "3.5rem", marginBottom: 0 }}>
+        Headings M
+      </p>
+      <p className='text-center'>
+        Font Size: 52, 3.5 rem
+      </p>
       
-      <p className="typography-S">Headings S</p>
-        <p>Font Size: 48, 3.0 rem</p>
+      <p className="typography-S text-center" style={{ fontSize: "3rem", marginBottom: 0 }}>
+        Headings S
+      </p>
+      <p className='text-center'>
+        Font Size: 48, 3.0 rem
+      </p>
 
-    </div>
+    </Container>
   )
 }

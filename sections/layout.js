@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Container from 'react-bootstrap/Container'
 import styles from '../styles/Home.module.css'
 import { Button } from 'react-bootstrap';
 import Column from 'react-bootstrap/Col';
@@ -11,14 +12,17 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-export default  function GridBasicExample() {
+export default  function Layout() {
   return (
     <>
-    <h2 className="text-center mb-4">Layout</h2>
+      <Container fluid="md">
+    <h2 className={styles.pagesection} id="layout">Layout</h2>
     <p>For the layout of Electrify,
        we will mainly use grid and flexbox to create the layout of the website.
     </p>
-    <p>Layout for homepage</p>
+    
+    </Container>
+    <h4>Layout for homepage</h4>
     <Form>
       <Column gap={3} className="mt-9">
         <Col>
@@ -38,7 +42,7 @@ export default  function GridBasicExample() {
    
     <Form>
     
-    <p>Here is example of 1 answer questions</p>
+    <h4>Here is example of 1 answer questions</h4>
       <fieldset>
         <Form.Group as={Row} className="mb-3">
           <Form.Label as="legend" column sm={2}>
@@ -72,7 +76,7 @@ export default  function GridBasicExample() {
         <Button type="submit" className='border border-#3B8D95' style={{ backgroundColor:"#3B8D95"}}>Next</Button>
         </Col>
       </Form.Group>
-      <p>Here is example of Multiple answer questions</p>
+      <h4>Here is example of Multiple answer questions</h4>
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
       <Form.Label as="legend" column sm={2}>
             Multiple checkboxes

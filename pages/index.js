@@ -4,11 +4,11 @@ import styles from '../styles/Home.module.css'
 import { NavBar } from '../sections/navBar'
 
 import Logo from '../sections/logos'
-import Grid from '../sections/grid'
+import Layout from '../sections/layout'
 import Typography from '../sections/typography'
 import Graphics from '../sections/graphics'
 import Colors from '../sections/colors'
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 export default function Home() {
 
@@ -29,7 +29,7 @@ export default function Home() {
           <hr className="w-100 p-3 " style={{color:"black" }} id="typography" />
         <Typography />
           <hr className="w-100 p-3 " style={{color:"black" }} id="grid" />
-        <Grid />
+        <Layout />
           <hr className="w-100 p-3 " style={{color:"black" }} />
         <Graphics />
 

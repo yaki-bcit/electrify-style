@@ -1,38 +1,43 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import colorPhoto from "../public/Screenshot 2022-10-22 212409.png";
-import { ColorDiv, SurroundingColorDiv } from "../components/ColorDiv";
-import Container from "react-bootstrap/Container";
+import styles from "../styles/Home.module.css"
+import { ColorDiv, SurroundingColorDiv } from "../components/ColorDiv"
+import Container from "react-bootstrap/Container"
 
 export default function Colors() {
   return (
     <>
-      <SurroundingColorDiv>
-        <ColorDiv bgColor={"#FCDE97"}>
-          <p>#FCDE97</p>
-        </ColorDiv>
-        <ColorDiv bgColor={"#CE1228"}>
-          <p>#CE1228</p>
-        </ColorDiv>
-        <ColorDiv bgColor={"#C2E1E8"}>
-          <p>#C2E1E8</p>
-        </ColorDiv>
-        <ColorDiv bgColor={"#3B8D95"}>
-          <p>#3B8D95</p>
-        </ColorDiv>
-        <ColorDiv bgColor={"#6C6C6C"}>
-          <p>#6C6C6C</p>
-        </ColorDiv>
-        <ColorDiv bgColor={"#000000"}>
-          <p>#000000</p>
-        </ColorDiv>
-        <ColorDiv bgColor={"#F8F5F4"}>
-          <p>#F8F5F4</p>
-        </ColorDiv>
-      </SurroundingColorDiv>
       <Container fluid="md">
-        <h3>Color Usage:</h3>
+        <h2 className={styles.pagesection} id="colors">
+          Colors
+        </h2>
+      </Container>
+      
+
+        <SurroundingColorDiv className={styles.grid}>
+          <ColorDiv bgColor={"#FCDE97"}>
+            <p>#FCDE97</p>
+          </ColorDiv>
+          <ColorDiv bgColor={"#CE1228"}>
+            <p>#CE1228</p>
+          </ColorDiv>
+          <ColorDiv bgColor={"#C2E1E8"}>
+            <p>#C2E1E8</p>
+          </ColorDiv>
+          <ColorDiv bgColor={"#3B8D95"}>
+            <p>#3B8D95</p>
+          </ColorDiv>
+          <ColorDiv bgColor={"#6C6C6C"}>
+            <p>#6C6C6C</p>
+          </ColorDiv>
+          <ColorDiv bgColor={"#000000"}>
+            <p>#000000</p>
+          </ColorDiv>
+          <ColorDiv bgColor={"#F8F5F4"}>
+            <p>#F8F5F4</p>
+          </ColorDiv>
+        </SurroundingColorDiv>
+
+
+      <Container fluid="md">
         <p style={{ fontSize: 20 }}>
           The colours used by our website are a combination of colours most used
           by EV makers in the united states. We decided to go with the colours
